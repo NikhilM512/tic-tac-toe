@@ -34,7 +34,7 @@ function boxClicked(e) {
 
     if(playerHasWon()!==false){
         console.log("Won")
-        playerText = `$(currentPlayer) has won the game!`
+        playerText.innerText = `${currentPlayer} has won the game!`
         let winning_blocks = playerHasWon()
 
        
@@ -48,7 +48,7 @@ function playerHasWon(){
     for (const condition of winningCombos){
         let [a, b, c] = condition
         
-        if (spaces[c-1]==spaces[b-1] && (spaces[a-1]==spaces[b-1] && spaces[a-1] == spaces[c-1])){
+        if (spaces[c-1] && spaces[b-1] &&spaces[c-1]==spaces[b-1] && (spaces[a-1]==spaces[b-1] && spaces[a-1] == spaces[c-1])){
             return [a,b,c]
         }
     }
