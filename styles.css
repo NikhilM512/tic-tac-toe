@@ -25,6 +25,7 @@ div{
     border-radius: 5px;
     width: 60px;
     height: 60px;
+    cursor: pointer;
 }
 .container{
     margin-left: 43%;
@@ -37,4 +38,14 @@ footer{
     margin-top: 14%;
     margin-left: 44.2%;
     font-family: 'Fredoka', sans-serif;
+}
+
+.box{
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FAB201;
+
 }
